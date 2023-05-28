@@ -1,0 +1,41 @@
+baseURL = 'http://dnsdriveby.com/'
+languageCode = 'en-us'
+title = 'DNS Driveby'
+theme = "hugo-blog-awesome"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/AlexLynd/DNS-Driveby"
+
+[[params.socialIcons]]
+name = "twitter"
+url = "https://twitter.com/AlexLynd"
+
+[params.author]
+  #avatar = "avatar.jpg" # put the file in assets folder; also ensure that image has same height and width
+  # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
+  intro = "DNS Driveby"
+  name = "Alex Lynd"
+  description = "Using Open Wi-Fi networks for easy telemetry!"
+
+[menu]
+  [[menu.main]]
+    # The page reference (pageRef) is useful for menu highlighting
+    # When pageRef is set, setting `url` is optional; it will be used as a fallback if the page is not found.
+    pageRef="/"
+    name = 'Home'
+    url = '/'
+    weight = 10
+  [[menu.main]]
+    pageRef="posts"
+    name = 'Posts'
+    url = '/posts/'
+    weight = 20
+  [[menu.main]]
+    pageRef="shop"
+    name = 'Shop'
+    url = 'https://lyndlabs.io/products/dns-driveby-kit'
+    weight = 30
+
+[params]
+  goToTop = true

@@ -1,7 +1,8 @@
-baseURL = 'http://dnsdriveby.com/'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'DNS Driveby'
 theme = "hugo-blog-awesome"
+canonifyURLs = true
 
 [[params.socialIcons]]
 name = "github"

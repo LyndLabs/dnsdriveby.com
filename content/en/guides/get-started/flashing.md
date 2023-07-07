@@ -12,8 +12,9 @@ menu:
 weight: 20
 toc: true
 ---
+{{< alert icon="⚠️" context="info" text="Updates & more instructions coming soon." />}}
 ### 1. Install dependencies
-All you need is [Docker]() and [Make]()!
+All you need is [Docker](https://www.docker.com/) and [Make](https://www.gnu.org/software/make/)!
 ```
 sudo apt install docker make
 ```
@@ -25,11 +26,23 @@ git clone https://github.com/LyndLabs/DNS-Driveby
 ```
 
 ### 3. Navigate into Code Folder
+Change directories into the source code folder.
 
 ```
-cd DNS-Driveby/src/Demo 
+cd DNS-Driveby/src 
 ```
-### 4. Flash the code!
-You can generate your own DNS Token at [canarytokens.org](https://canarytokens.org), and make sure to replace it below!
+### 4. Create a DNS CanaryToken
+Generate a DNS Token at [canarytokens.org](https://canarytokens.org).
+
+### 5. Flash the code!
+Replace `<CANARYTOKEN>` with your custom CanaryToken generated above!
+
 ```
 sudo make flash canaryurl = "<CANARYTOKEN>"
+```
+
+### 6. Monitoring your Token
+`coming soon`
+
+### 7. Adding a Screen
+`coming soon`

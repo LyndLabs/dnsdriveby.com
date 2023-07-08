@@ -38,6 +38,31 @@ I recommend using **Uxcell** inserts since they're easy to source.
 ### Designing for Heat Inserts 
 When designing a hole for threaded inserts, you have to compensate for [print shrinkage](https://filament2print.com/gb/blog/136_warping-contractions-3D-printing-parts.html) and heat warping during installation.
 
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/images/inserts/warp-damage-2.JPG" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <p>Example of warp damage & plastic filling from insert going askew.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/images/inserts/warp-damage-1.JPG" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <p>Warp damage from insufficient clearance.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
 #### 1. Heat Warping
 Heat warp happens when the insert doesn't have enough surrounding material to dissipate the heat while pressing.  
 
@@ -74,5 +99,11 @@ Combating print shrinkage is pretty easy.  I typically scale my designs in the `
 ### How to Install
 Pictures coming soon.  This is a good guide for [adding threaded inserts](https://www.makerbot.com/professional/post-processing/inserts/).
 
+**Tools**
+- Tweezers or Pliers
+- Soldering Iron
+
 1. Press fit your insert into place, until it rests about halfway in the hole.
-2. Heat up your soldering iron and press that bitch into place!
+2. You can hold the insert stable using tweezers / needle-nose pliers.
+3. Heat up your soldering iron (~ 300 F) and gently press the insert into place.
+4. Be patient!  Pressing too fast can cause the print to warp or melt.

@@ -1,6 +1,6 @@
 ---
 title: "Threaded Inserts"
-description: "Known DNS Driveby bugs"
+description: "A guide to selecting & designing for threaded inserts."
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2020-11-16T13:59:39+01:00
 draft: false

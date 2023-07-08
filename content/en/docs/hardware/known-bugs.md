@@ -14,6 +14,7 @@ toc: true
 ---
 ## v1.2 PCB
 * The GPS jumper pads connect `GPS-RX` to ESP8266 `RX`, and `GPS-TX` to ESP8266 `TX`.  The correct configuration is supposed to be `GPS-TX`→`RX` and `GPS-RX`→`TX`.  To fix this, `v1.2` boards route the GPS pins to `D3` & `D4` by default.
+* LiPo Battery terminal pinout has "reversed" polarity
 
 ## GPS Serial Communcation
 The [NEO-6M GPS Module]() uses UART to communicate over a Serial connection.  However, the ESP8266 only has a single UART bus, which is used for uploading code via USB / providing a Serial readout.  There are two things that can be done, both of which kinda suck:

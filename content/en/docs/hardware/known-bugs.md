@@ -14,7 +14,8 @@ toc: true
 ---
 ## v1.2 PCB
 * The GPS jumper pads connect `GPS-RX` to ESP8266 `RX`, and `GPS-TX` to ESP8266 `TX`.  The correct configuration is supposed to be `GPS-TX`→`RX` and `GPS-RX`→`TX`.  To fix this, `v1.2` boards route the GPS pins to `D3` & `D4` by default.
-* LiPo Battery terminal pinout has "reversed" polarity
+* LiPo Battery terminal pinout has "reversed" polarity (see Sony / Adafruit Standard)
+* Screen polarity reversed from standard
 
 ## GPS Serial Communcation
 The [NEO-6M GPS Module]() uses UART to communicate over a Serial connection.  However, the ESP8266 only has a single UART bus, which is used for uploading code via USB / providing a Serial readout.  There are two things that can be done, both of which kinda suck:
@@ -22,6 +23,9 @@ The [NEO-6M GPS Module]() uses UART to communicate over a Serial connection.  Ho
 1. **Software Serial** - Using pins `D3` & `D4`, you can *emulate* a Serial connection in software. However, this isn't recommended if you intend to perform WiFi recon, since SoftwareSerial relies on interrupts that crash the ESP8266.
 
 2. **Built-in UART** - This isn't optimal, since having a free USB Serial readout is nice - but ensures reliable communication.  You can use the [jumpers]() to toggle this option. 
+
+## SD Card Prevents Boot
+`docs coming soon`
 
 
 

@@ -16,7 +16,7 @@ toc: true
 ### 1. Install dependencies
 All you need is [Docker](https://www.docker.com/) and [Make](https://www.gnu.org/software/make/)!
 ```
-sudo apt install docker make
+sudo apt install docker.io make
 ```
 ### 2. Clone the GitHub Repo
 You can use git to download the [source code](https://github.com/LyndLabs/DNS-Driveby). You can also download it as a [zip file]().
@@ -38,7 +38,7 @@ Generate a DNS Token at [canarytokens.org](https://canarytokens.org).
 Replace `<CANARYTOKEN>` with your custom CanaryToken generated above!
 
 ```
-sudo make flash canaryurl = "<CANARYTOKEN>"
+sudo make flash canaryurl="<CANARYTOKEN>"
 ```
 
 ### 6. Monitoring your Token

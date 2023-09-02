@@ -12,7 +12,7 @@ weight: 100
 
 toc: true
 ---
-{{< alert icon="⚠️" context="info" text="v1.2 kits didn't ship with threaded inserts, but have the option to add them." />}}
+{{< alert icon="⚠️" context="info" text="Kits don't ship with threaded inserts, but have the option to add them." />}}
 
 DNS Driveby enclosures are 3D printed, so directly tapping / adding screws can wear down the plastic over time.  Threaded inserts are a slick & easy way to solve this problem!
 

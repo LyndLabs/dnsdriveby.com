@@ -1,6 +1,6 @@
 ---
-title: "Known Bugs"
-description: "Known DNS Driveby bugs"
+title: "Known Issues"
+description: "Known DNS Driveby Issues"
 date: 2020-11-16T13:59:39+01:00
 lastmod: 2020-11-16T13:59:39+01:00
 draft: false
@@ -12,10 +12,23 @@ weight: 100
 
 toc: true
 ---
-## v1.2 PCB
-* The GPS jumper pads connect `GPS-RX` to ESP8266 `RX`, and `GPS-TX` to ESP8266 `TX`.  The correct configuration is supposed to be `GPS-TX`→`RX` and `GPS-RX`→`TX`.  To fix this, `v1.2` boards route the GPS pins to `D3` & `D4` by default.
-* LiPo Battery terminal pinout has "reversed" polarity (see Sony / Adafruit Standard)
-* Screen polarity reversed from standard
+{{< alert icon="⚠️" context="warning" text="This page documents hardware issues, which you can help point out on our GitHub!" />}}
+
+Please reach out to [support@lyndlabs.io]() for support & replacements!
+
+## Resources:
+Please [create a Github Issue]() on the official Hardware Repo to help track new problems!
+For replacement kits & support, reach out to [support@lyndlabs.io]() or join our [Discord](https://discord.gg/PewDxbUfam).
+
+## Kit Specific Issues:
+#### v1.2
+- **GPS**: The ESP8266 only has 1 native Serial Port, so we added jumper pads to toggle between `UART` and pins `D3  / D4`.  The `UART` lines are swapped, so `v1.2` kits ship with the jumper pads cut, and wired to `D3 / D4`. 
+- **LiPo**: Terminal pinout has "reversed" polarity (see Sony / [Adafruit Standard](https://forums.adafruit.com/viewtopic.php?p=776952&sid=aeaa63c8b753bc16bb6dbd94a9a2c87c#p776952))
+- **Screen**: Polarity reversed from standard screens
+
+#### v1.3
+-  **Counterfeit Modules:** A large batch of failed & counterfeit GPS Modules were shipped to me in early August, and a handful of customers were affected by this lack of QA.  Please contact for support & replacements!
+
 
 ## GPS Serial Communcation
 The [NEO-6M GPS Module]() uses UART to communicate over a Serial connection.  However, the ESP8266 only has a single UART bus, which is used for uploading code via USB / providing a Serial readout.  There are two things that can be done, both of which kinda suck:
@@ -25,7 +38,14 @@ The [NEO-6M GPS Module]() uses UART to communicate over a Serial connection.  Ho
 2. **Built-in UART** - This isn't optimal, since having a free USB Serial readout is nice - but ensures reliable communication.  You can use the [jumpers]() to toggle this option. 
 
 ## SD Card Prevents Boot
-`docs coming soon`
+This issue has been fixed in `v1.3` PCB's!
+
+Previously, having an SD Card plugged into the kit would prevent the ESP8266 from booting, since the SPI pins are shared with the internal flash memory.  I suspect it was attempt to boot from the SD Card.
+
+This issue is solved by adding a pull-down resistor to pin `D8`, which is used for `CS`.
+
+
+
 
 
 

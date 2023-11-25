@@ -1,5 +1,5 @@
 ---
-title: "Deep Sleep"
+title: "💤 Deep Sleep"
 description: "Using low-power mode on your DNS Driveby Kit"
 lead: "Using low-power mode on your DNS Driveby Kit 🔋"
 date: 2022-08-27T08:48:57+00:00

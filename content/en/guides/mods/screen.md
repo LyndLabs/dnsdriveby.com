@@ -1,5 +1,5 @@
 ---
-title: "Screen"
+title: "🖵 Screen"
 description: "Adding a screen to your wardriving kit!"
 # lead: "Adding a screen to your wardriving kit!"
 date: 2022-08-27T08:48:57+00:00
